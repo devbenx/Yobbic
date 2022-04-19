@@ -16,13 +16,13 @@ export class AuthenticationService {
             public toastController: ToastController
       ) {
             this.platform.ready().then(() => {
-                  this.ifLoggedIn(); //to pass login page
+                  // this.ifLoggedIn(); //to pass login page
             });
       }
 
-      ifLoggedIn() {
-            this.authState.next(true);
-      }
+      // ifLoggedIn() {
+      //       this.authState.next(true);
+      // }
 
 
       login(username, password) {
