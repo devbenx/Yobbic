@@ -1,0 +1,17 @@
+.card-container {
+        background-color: #fff;
+        color: #9faebf;
+
+        & ion-card-title {
+                color: #262f3b;
+        }
+
+        & ion-card-subtitle {
+                color: #9faebf;
+        }
+
+}
+
+.card-item {
+        background: transparent;
+}

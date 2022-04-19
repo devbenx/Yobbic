@@ -1,0 +1,35 @@
+<ion-header>
+      <ion-toolbar>
+            <ion-title>Welcome to Yoobic!</ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-root">
+      <form class="form-list-item" id="login-form" #loginForm="ngForm" (ngSubmit)="loginUser(username, password)"
+            autocomplete="off">
+            <ion-list class="login-list-item" inset>
+                  <ion-list-header>
+                        <ion-img [src]=""></ion-img>
+                        <h2>Sign in</h2>
+                  </ion-list-header>
+                  <ion-item class="login-form-item">
+                        <ion-icon class="icon-form-item" name="mail"></ion-icon>
+                        <ion-input placeholder="E-mail" name="username" id="loginField" type="text" required
+                              [(ngModel)]="username">
+                        </ion-input>
+                  </ion-item>
+                  <ion-item class="login-form-item">
+                        <ion-icon class="icon-form-item transparent" name="lock-closed"></ion-icon>
+                        <ion-input class="transparent" placeholder="Password" name="password" id="passwordField"
+                              type="password" required [(ngModel)]="password">
+                        </ion-input>
+                  </ion-item>
+                  <ion-button color="primary" expand="block" id="login-button" type="submit"
+                        [disabled]="!loginForm.form.valid">
+                        Login
+                  </ion-button>
+            </ion-list>
+
+            <div id="login-error" *ngIf="error" class="alert alert-danger">{{error}}</div>
+      </form>
+</ion-content>

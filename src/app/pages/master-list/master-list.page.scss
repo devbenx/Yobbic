@@ -1,0 +1,58 @@
+// ion-ripple-effect {
+//         background-color: aliceblue !important;
+// }
+
+.card-container {
+        background-color: #fff;
+        color: #9faebf;
+
+        & p {
+                color: #262f3b;
+                text-align: end;
+        }
+
+        & ion-item {
+                display: flex;
+                flex-direction: column;
+                --background: transparent;
+        }
+
+        & ion-card-header {
+                display: flex;
+                flex-direction: column;
+        }
+
+        & ion-card-title {
+                color: #262f3b;
+        }
+
+        & ion-card-subtitle {
+                color: #9faebf;
+        }
+
+        & ion-avatar {
+                height: 3.2rem;
+                width: 3.2rem;
+        }
+
+        & .img-main {
+                object-fit: cover;
+                object-position: top;
+                height: 14rem;
+                width: 100%;
+        }
+
+
+}
+
+.sub-end {
+        & ion-card-subtitle {
+                text-align: end;
+                font-weight: 400;
+                color: #9faebf;
+        }
+}
+
+.card-item {
+        background: transparent;
+}

@@ -1,0 +1,43 @@
+<ion-header>
+      <ion-toolbar>
+            <ion-title>{{person?.name}}</ion-title>
+            <ion-buttons slot="start">
+                  <ion-back-button defaultHref="/master-list"></ion-back-button>
+            </ion-buttons>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <img class="img-subject" src="https://starwars-visualguide.com/assets/img/characters/{{person_id}}.jpg">
+      <ion-list>
+            <ion-item>
+                  <p>Birth year: {{person?.birth_year}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Eye color: {{person?.eye_color}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Gender: {{person?.gender}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Hair color: {{person?.hair_color}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Height: {{person?.height}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Mass: {{person?.mass}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Skin color: {{person?.skin_color}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Created: {{person?.created}}</p>
+            </ion-item>
+            <ion-item>
+                  <p>Edited: {{person?.edited}}</p>
+            </ion-item>
+      </ion-list>
+
+
+</ion-content>

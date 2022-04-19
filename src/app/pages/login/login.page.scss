@@ -1,0 +1,45 @@
+.login-form-item {
+        display: block;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        background-color: rgba(240, 248, 255, 0.116);
+        margin-bottom: 0.5rem;
+}
+
+.icon-form-item {
+        padding: 0.5rem 0.7rem 0.5rem 0;
+}
+
+.form-list-item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: auto;
+        justify-content: center;
+}
+
+ion-list {
+        background-color: transparent;
+}
+
+
+.login-root {
+        display: flex;
+        flex-direction: column;
+}
+
+ion-list-header {
+        padding: 0;
+}
+
+ion-list-header h2 {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+
+}
+
+ion-item {
+        --background: transparent !important;
+}
